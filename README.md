@@ -55,7 +55,7 @@ Data is extracted here with the help of Python library named *Spotipy* for a Spo
     - We store the raw data extacted from the API into raw_data_spotify so to be utilized later for transformation.
     - AWS capability to interact Lambda with S3 is fulfilled by **boto3** client.
       
-+ ### Create another Lambda function for trasformation
++ ### Create another Lambda function for transformation
   
     - Now the transformation is done on the extarcted data so that cleansed and proper formatted data is loaded to S3.
     - Here the DATE data is transformed into it's proper *datetime* format.
