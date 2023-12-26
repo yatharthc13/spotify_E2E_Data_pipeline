@@ -61,7 +61,7 @@ Data is extracted here with the help of Python library named *Spotipy* for a Spo
     - Here the DATE data is transformed into it's proper *datetime* format.
     - Lambda function gives you freedom to add logic as to how you want your data to look and as per the data we extract from other sources we can transform it the way we want.
       
-+ ### Add triggers of continuos extraction from Spotify
++ ### Add triggers for continuous extraction from Spotify
   
     - The API is integrated and data is extracted but to keep extracting the data at a particular rate, **AWS Cloudwatch** can be used.
     - Cloudwatch is used here as trigger to extract data let's say on daily basis
@@ -72,7 +72,7 @@ Data is extracted here with the help of Python library named *Spotipy* for a Spo
     - Inside that there are three folders named- album_data, artist_data and songs_data are created which will store the dataframe data.
     - Another trigger can be added to our tranformation Lambda function to store the data coming in on daily basis, this way the data storage is automated.
        
-+ ### Generating AWS Glue crawlers to crawl CSV files and create tables
++ ### Generate AWS Glue crawlers to crawl CSV files and create tables
   
     - AWS Glue Crawlers are helpful in crawling the data from the source and then storing the data inside the databases.
     - Here three crawlers for artists, albums and songs data were created in order to created three tables of them.
